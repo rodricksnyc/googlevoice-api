@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<title>WesVoice</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+	<link rel="stylesheet" type="text/css" href="css/WesVoice.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+<body>
+	<header class="el-S">
+		<div class="container">
+			<div class="header-wrapper">
+				<a href="" class="logo f-300 t-white" title="WesVoice">Wes<b class="t-white">Voice</b></a>
+				<div class="user-info">
+					<div class="user-name t-white f-14">User Name</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="content-wrapper">
+				<div class="menu">
+					<div class="menu-wrapper">
+						<div class="menu-item active preview f-14">
+							Text to Speech
+						</div>
+						<div class="menu-item log f-14">
+							Log
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<p class="p-intro f-16">Welcome to WesVoice, your portal to cost-effective text-to-speech narration options using Google WaveNet. Select from the choices below to find the most natural sounding voice to fit your project’s need. The output is not just for Captivate trainings, exports can be for use on the web, in videos, or other presentations.
+						  <!-- <a href="https://cloud.google.com/text-to-speech/" class="t-wesblue f-500" target="_blank" title="Click to visit google's text-to-speech page">Go to Google&nbsp;<img src="src/external-link-alt-solid.svg" class="img-external-link" alt="External link" /></a>  -->
+					</p>
+					<div class="d-intro-infographic">
+						<img class="img-infographic" src="src/img_infographic.svg" alt="Instructions" title="" />
+					</div>
+					<div class="d-voice">
+						<h2 class="h2-title f-20 t-wesblue f-600">Select a Voice</h2>
+						<div class="d-voice-selector">
+							<ul class="ul-voice-list col-1"></ul>
+							<ul class="ul-voice-list col-2"></ul>
+						</div>
+						<span class="span-more f-14 f-500 t-teal">See More&nbsp;&#9660;</span>
+						<span class="span-less f-14 f-500 t-teal">See Less&nbsp;&#9650;</span>
+					</div>
+					<div class="d-input">
+						<div class="row-1">
+							<div class="col-1 d-charge-no">
+								<h2 class="h2-title f-18 t-wesblue f-600">Charge Number</h2>
+								<input class="input-charge-no" type="text" name="chargeNo" placeholder="#12345678910" />
+							</div>
+							<div class="col-2 d-file-name">
+								<h2 class="h2-title f-18 t-wesblue f-600">File Name</h2>
+								<input class="input-file-name" type="text" name="fileName" placeholder="myfilename" />
+							</div>
+						</div>
+						<div class="row-2">
+							<h2 class="h2-title f-18 t-wesblue f-600">Enter Text</h2>
+							<textarea class="input-text" type="text" name="inputTxt" placeholder="Enter Text here" wrap="on" maxlength="5000"></textarea>
+							<span class="span-char-count f-14 f-500">0/5000 characters</span>
+							<span class="span-clear">Clear All</span>
+						</div>
+						<div class="row-3">
+								<span class="span-file-type f-16 t-wesblue f-500">File Type:</span>
+									<span class="span-mp3-btn span-btn f-14 f-500 selected" value="MP3">.mp3</span>
+									<span class="span-wav-btn span-btn f-14 f-500" value="LINEAR16">.wav</span>
+						</div>
+						<div class="row-4">
+								<span class="span-file-type f-16 t-wesblue f-500">Speed:</span>
+								<span class="span-speed-btn span-btn" value="0.5">x 0.5</span>
+								<span class="span-speed-btn span-btn" value="0.75">x 0.75</span>
+								<span class="span-speed-btn span-btn selected" value="0.75">x 1.0</span>
+								<span class="span-speed-btn span-btn" value="1.25">x 1.25</span>
+								<span class="span-speed-btn span-btn" value="1.5">x 1.5</span>
+							</div>
+					</div>
+					<div class="d-certify">
+					  <p class="p-final-warning-msg f-14 animated"><span class="f-600">An error occurred during form validation</span>, please see below:<br></p>
+					  <label class="control control--checkbox f-500">I confirm that the text entered above is correct and accurate. I understand re-submitting the text would be considered
+								a new submission and result in a separate charge.
+					    <input type="checkbox"/>
+					    <div class="control__indicator"></div>
+					  </label>
+					</div>
+					<div class="d-submit">
+						<p class="p-final-error-msg f-14 animated"></p>
+						<span class="span-submit-btn f-600" role="button" title="Submit" status="disabled"><img src="src/loader.svg" class="img-loader">Submit</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="footer-wrapper">
+				<p class="p-wes-title t-white">An Employee-Owned Research Corporation&reg;</p>
+				<img src="src/footer_westat_logo.svg" alt="Westat Home page" title="Westat" class="img-wes-logo"/>
+			</div>
+		</div>
+	</footer>
+
+	<div class="d-success">
+		<div class="d-successwrapper">
+			<span class="span-close">x</span>
+			<img class="img-success-check-mark" src="src/icon_check.svg" alt="" title="Success"/>
+			<p class="p-success-msg t-wesblue f-600 f-20">Your audio file has been successfully downloaded</p>
+			<p class="p-notify-msg t-wesblue f-400 f-14">Check your downloads folder or other designated folder on your computer to listen to the file.</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/fileSaver.js"></script>
+	<script type="text/javascript" src="js/lodash.js"></script>
+	<script type="text/javascript" src="js/voiceList.js"></script>
+	<script type="text/javascript" src="js/WesVoice.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138691227-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138691227-3');
+</script>
+</body>
+</html>
